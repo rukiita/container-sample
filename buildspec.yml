@@ -4,8 +4,8 @@ env:
   variables:
     ECR_REPOSITORY: 267375937715.dkr.ecr.ap-northeast-1.amazonaws.com/test-ecr
   secrets-manager:
-    DOCKERHUB_USERNAME: "dockerDev:DOCKERHUB_USERNAME" # JSON内の'username'キーの値を取得
-    DOCKERHUB_PASSWORD: "dockerDev:DOCKERHUB_PASSWORD" # JSON内の'password'キーの値を取得
+    DOCKERHUB_USERNAME: "dockerEnv:DOCKERHUB_USERNAME" # JSON内の'username'キーの値を取得
+    DOCKERHUB_PASSWORD: "dockerEnv:DOCKERHUB_PASSWORD" # JSON内の'password'キーの値を取得
     
 phases:
   pre_build:
